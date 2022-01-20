@@ -3,13 +3,15 @@
 #include <time.h>
 
 int main() {
-    clock_t begin = clock();
+    
     long n, output;
     n = 0;
     output = 0;
 
     printf("Enter a value: ");
     scanf("%ld", &n);
+
+    clock_t begin = clock();
 
     while (n != 1) {
         if (n%2 == 0) {
