@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 int main() {
+    clock_t begin = clock();
     long n, output;
     n = 0;
     output = 0;
@@ -19,7 +21,12 @@ int main() {
         }
     }
 
-    printf("Number of hops: %lu", output);
+    printf("Number of hops: %lu\n", output);
+
+    clock_t end = clock();
+    double time = (double)(end-begin)/CLOCKS_PER_SEC;
+
+    printf("Total time in seconds: %f\n", time);
 
     return 0;
 }
