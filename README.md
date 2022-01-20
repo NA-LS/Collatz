@@ -7,7 +7,7 @@ The collatz.c file contains the serial implementation of the Collatz algorithm a
 1. In terminal run the following command ~$ cc -Wall -ansi -pedantic -o collatz collatz.c
 2. Once the program has compiled run the executable by running the following command: ~$ ./collatz
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The collatz_parallel.c file contains the parallel implementation of the Collatz algorithm but is incomplete. The program runs but produces the incorrect outputs, I have tried to get it working but was unable to get it working in the given time.
 
